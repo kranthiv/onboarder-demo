@@ -30,60 +30,91 @@
     <![endif]-->
     <script>
         let tour = {
-            "id": "localhost__index_html",
             "steps": [
                 {
-                    "title": "Bootstrap grid",
-                    "content": "Bootstrap grid example",
+                    "title": "examples",
+                    "content": "heading",
                     "target": "h1#grid-example",
-                    "placement": "bottom",
-                    "id": "localhost__index_html"
-                },
-                {
-                    "title": "Three equal columns",
-                    "content": "Three equal column examoples",
-                    "target": "h3#three-column-example",
-                    "placement": "bottom",
-                    "id": "localhost__index_html"
-                },
-                {
-                    "title": ".col-md-4",
-                    "content": "column 4 length",
-                    "target": "div.container > div:nth-of-type(2) > div:nth-of-type(1)",
-                    "placement": "right",
-                    "id": "localhost__index_html"
-                },
-                {
-                    "title": "Two columns with two nested columns",
-                    "content": "nesated column example",
-                    "target": "h3#nested-columns",
-                    "placement": "bottom",
-                    "id": "localhost__index_html"
-                },
-                {
-                    "title": "Mixed:",
-                    "content": "mobile and desktop example",
-                    "target": "div.container > h3:nth-of-type(6)",
-                    "placement": "bottom",
-                    "id": "localhost__index_html"
-                },
-                {
-                    "title": ".col-xs-12 .col-md-8",
-                    "content": "test of col-xs-12",
-                    "target": "div.col-xs-12.col-md-8",
-                    "placement": "top",
-                    "id": "localhost__index_html"
-                },
-                {
-                    "title": "Basic grid layouts",
-                    "content": "end of tour",
-                    "target": "p.lead",
                     "placement": "left",
-                    "id": "localhost__index_html"
+                    "journeyId": "localhost__",
+                    "id": "03271184-f1b7-4008-a7d3-92399a8ceff3"
+                },
+                {
+                    "title": "Three unequal columns",
+                    "content": "three column example",
+                    "target": "h3#three-unequal-example",
+                    "placement": "left",
+                    "journeyId": "localhost__",
+                    "id": "e9a91f4d-87bf-4045-841f-0634d8b1b1a5"
+                },
+                {
+                    "title": "or full-width elements.",
+                    "content": "no grid clas",
+                    "target": "p.text-warning",
+                    "placement": "bottom",
+                    "journeyId": "localhost__",
+                    "id": "c625724d-b228-4910-9845-6e99a6de285a"
+                },
+                {
+                    "title": ".col-xs-6",
+                    "content": "click on navigate to next page",
+                    "target": "div.container > div:nth-of-type(8) > div:nth-of-type(2)",
+                    "placement": "right",
+                    "journeyId": "localhost__",
+                    "id": "40351c82-0c47-40df-8841-9597eb70cbc2"
+                },
+                {
+                    "title": "examples",
+                    "content": "heading",
+                    "target": "h1#grid-example",
+                    "placement": "right",
+                    "journeyId": "localhost__",
+                    "id": "424da7f0-1a69-429b-a929-e8fca3b74d43"
+                },
+                {
+                    "title": "Two columns",
+                    "content": "column 2",
+                    "target": "h3#two-column-example",
+                    "placement": "bottom",
+                    "journeyId": "localhost__",
+                    "id": "0778592b-b160-4d9b-8ac4-8646cafda5b8"
+                },
+                {
+                    "title": "desktop",
+                    "content": "click pm next page",
+                    "target": "div.container > h3:nth-of-type(6)",
+                    "placement": "top",
+                    "journeyId": "localhost__",
+                    "id": "36800f3b-a666-47d7-a45c-981f6f1441ec"
+                },
+                {
+                    "title": "post",
+                    "content": "blog post",
+                    "target": "div.col-sm-8.blog-main > div:nth-of-type(1) > h2:nth-of-type(1)",
+                    "placement": "right",
+                    "journeyId": "localhost__",
+                    "id": "3dfd02b5-7d71-4fe7-9169-11be80e1d08b"
+                },
+                {
+                    "title": "Click here to go next pag",
+                    "content": "click here for next page",
+                    "target": "div.col-xs-12 > span:nth-of-type(1)",
+                    "placement": "right",
+                    "journeyId": "localhost__",
+                    "id": "fe2026cf-fe3c-4ffd-99d4-111348bf3e99"
+                },
+                {
+                    "title": "system",
+                    "content": "final",
+                    "target": "body > div:nth-of-type(1) > h3:nth-of-type(4)",
+                    "placement": "top",
+                    "journeyId": "localhost__",
+                    "id": "f1ab6581-7b2f-43e3-9e0c-59ea5c2c320c"
                 }
             ],
-            "_id": "localhost__index_html",
-            "_rev": "7-d364f99be894be25b1a9ad35684c1e89"
+            "id": "localhost__",
+            "_id": "localhost__",
+            "_rev": "11-7f865546842a9c085e9a4a3130c37685"
         };
         $(document).ready(() => {
             let journey = OnBoard(tour);
@@ -167,6 +198,13 @@
         <div class="row">
             <div class="col-xs-6">.col-xs-6</div>
             <div class="col-xs-6">.col-xs-6</div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-xs-12">
+                <a href="multipage.html" class="btn btn-primary">Navigate to Next page</a>
+            </div>
         </div>
 
         <hr>
